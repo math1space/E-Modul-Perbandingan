@@ -683,14 +683,13 @@ body.evaluation-active .studentNav.evaluationNav{opacity:1}
 <button onclick="go('infoProfil',this)">🌟 Profil Pelajar Pancasila</button>
 <button onclick="go('infoTarget',this)">👥 Target Peserta Didik</button>
 <button onclick="go('infoAsesmen',this)">📝 Asesmen</button>
-<button onclick="go('contents',this)">📖 Materi</button>
 <button onclick="go('pustaka',this)">📚 Daftar Pustaka</button>
 </div></div>
 <button class="studentNav" onclick="go('studentScores',this);renderStudentScores()">🏆 Skor Kuis dan Evaluasi</button><button class="studentNav evaluationNav" onclick="go('evaluasi',this)">📝 Evaluasi</button><button onclick="go('about',this)">ℹ️ Tentang Modul</button>
 <button class="teacherNav hidden" onclick="go('teacherDashboard',this);refreshTeacherDashboard()">📊 Rekap Nilai</button><button class="teacherNav hidden" onclick="go('teacherAnswers',this);loadTeacherAnswers()">🧾 Rekap Pengerjaan</button><button class="teacherNav hidden" onclick="go('flipbook',this)">📖 Flipbook Modul</button><hr><button onclick="chooseUser()">⇄ Ganti Pengguna</button></div></aside>
 <main class="main"><div class="top"><button class="mobile" onclick="side()" title="Buka/tutup menu">☰</button><div class="topActions"><span class="badge" id="modeBadge">E-Modul Perbandingan</span></div></div>
 <section id="home"><div class="home"><span class="badge">Kelas VII • Fase D</span><h1>E-Modul Perbandingan</h1><p>Pelajari konsep dasar perbandingan, perbandingan senilai, perbandingan berbalik nilai, dan skala melalui flipbook yang dapat digunakan secara mandiri maupun sebagai pendamping pembelajaran di kelas.</p><button class="btn" onclick="go('contents')">Mulai Belajar →</button></div></section>
-<section id="contents" class="hidden"><div class="contents"><div class="sectionHero"><span class="badge">Pembelajaran</span><h1>📚 Materi</h1><p class="small">Pilih pertemuan untuk mempelajari materi melalui flipbook.</p></div><div class="card"><div id="toc" class="toc"></div></div></div></section>
+<section id="contents" class="hidden"><div class="contents"><div class="sectionHero"><span class="badge">Informasi & Jalur Belajar</span><h1>📚 Materi</h1><p class="small">Baca informasi modul secara berurutan, kemudian pelajari materi Pertemuan 1 sampai 4 melalui flipbook dan kerjakan kuisnya.</p></div><div class="aboutWrap"><div class="card"><h1>📘 Deskripsi Modul</h1><p>E-modul ini merupakan bahan ajar digital Matematika untuk peserta didik kelas VII/Fase D yang membahas materi perbandingan. E-modul disusun untuk menjadi bahan belajar yang dapat digunakan secara mandiri maupun sebagai pendamping pembelajaran di kelas. Materi disajikan secara bertahap, mulai dari konsep dasar perbandingan hingga penerapannya dalam permasalahan kehidupan sehari-hari.</p><p>E-modul ini terdiri atas beberapa kegiatan belajar, yaitu konsep dasar perbandingan, perbandingan senilai, perbandingan berbalik nilai, dan skala. Setiap kegiatan belajar dilengkapi dengan contoh permasalahan kontekstual, penjelasan materi, aktivitas belajar, latihan, rangkuman, dan refleksi.</p></div><div class="card"><h1>🎯 Capaian Pembelajaran</h1><p>Pada akhir fase D, peserta didik diharapkan mampu membaca, menulis, dan membandingkan bilangan bulat, bilangan rasional dan irasional, bilangan desimal, bilangan berpangkat bulat dan akar, bilangan dalam notasi ilmiah. Mereka dapat menerapkan operasi aritmetika pada bilangan real, dan memberikan estimasi/perkiraan dalam menyelesaikan masalah (termasuk berkaitan dengan literasi finansial). Peserta didik dapat menggunakan faktorisasi prima dan pengertian rasio (skala, proporsi, dan laju perubahan) dalam penyelesaian masalah.</p></div><div class="card"><h1>🧩 Kompetensi Awal</h1><p>Peserta didik telah memiliki pengetahuan dasar mengenai operasi hitung bilangan, pecahan, desimal, dan persen serta mampu melakukan perhitungan sederhana yang melibatkan bilangan tersebut. Peserta didik juga diharapkan telah memahami konsep dasar perkalian dan pembagian serta mampu menyelesaikan masalah matematika sederhana dalam kehidupan sehari-hari.</p><p>Pengetahuan dan keterampilan tersebut menjadi dasar bagi peserta didik untuk mempelajari konsep perbandingan, perbandingan senilai, perbandingan berbalik nilai, dan skala.</p></div><div class="card"><h1>🌟 Profil Pelajar Pancasila</h1><p>E-modul ini dikembangkan untuk mendukung penguatan Profil Pelajar Pancasila, khususnya dimensi bernalar kritis, mandiri, dan kreatif. Peserta didik diarahkan untuk mampu memahami informasi dari permasalahan, mengidentifikasi hubungan antarbesaran, memilih strategi penyelesaian yang tepat, serta memeriksa kembali hasil yang diperoleh.</p></div><div class="card"><h1>👥 Target Peserta Didik</h1><p>E-modul ini ditujukan bagi peserta didik kelas VII SMP/MTs (Fase D) yang mempelajari materi perbandingan pada mata pelajaran Matematika. E-modul dapat digunakan oleh peserta didik secara mandiri maupun sebagai pendamping pembelajaran di kelas.</p><p>Peserta didik diharapkan memiliki perangkat (ponsel, tablet, atau komputer) dan koneksi internet agar dapat membuka materi, mengerjakan kuis, serta mengikuti evaluasi.</p></div><div class="card"><h1>📝 Asesmen</h1><p>Asesmen dalam e-modul meliputi kuis pada setiap pertemuan dan evaluasi akhir. Kuis digunakan untuk mengetahui pemahaman peserta didik setelah mempelajari setiap materi, sedangkan evaluasi akhir digunakan untuk mengetahui pemahaman peserta didik terhadap keseluruhan materi perbandingan.</p></div><div class="card"><h1>📖 Materi dan Kuis</h1><p class="small">Pelajari materi dan kerjakan kuis secara berurutan. Pertemuan berikutnya akan terbuka setelah kuis sebelumnya dikerjakan.</p><div id="toc" class="toc"></div></div><div class="card"><h1>📚 Daftar Pustaka</h1><p class="refItem">As'ari, A. R., Tohir, M., Valentino, E., Imron, Z., &amp; Taufiq, I. (2017). Matematika SMP/MTs Kelas VII Semester 1. Jakarta: Kementerian Pendidikan dan Kebudayaan.</p><p class="refItem">Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia. (2021). Capaian Pembelajaran Mata Pelajaran Matematika pada Kurikulum Merdeka. Jakarta: Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi.</p><p class="refItem">Tim Gakko Tosho. (2021). Matematika untuk Sekolah Menengah Pertama Kelas VII. Penyadur Sugiman &amp; Achmad Dany Fachrudin. Jakarta: Pusat Kurikulum dan Perbukuan, Badan Penelitian dan Pengembangan dan Perbukuan, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi.</p><p class="refItem">Tim Gakko Tosho. (2021). Buku Panduan Guru Matematika untuk Sekolah Menengah Pertama Kelas VII. Penyadur Sugiman &amp; Achmad Dany Fachrudin. Jakarta: Pusat Kurikulum dan Perbukuan, Badan Penelitian dan Pengembangan dan Perbukuan, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi.</p></div></div></div></section>
 <section id="flipbook" class="hidden"><div class="flipPage"><div class="title"><h1>📖 Flipbook</h1><div class="small" id="sectionTitle">Pilih materi dari Daftar Isi.</div></div><div class="viewer"><div class="paper"><img id="pageImg" alt="Halaman modul"></div><div class="progress"><span id="bar"></span></div><div class="flipHint" id="flipHint"></div><div class="controls"><span class="counter" id="counter"></span><button onclick="currentUser?.role==='teacher'?go('teacherDashboard'):go('contents')">☰ Daftar Isi</button><button onclick="toggleFullscreen()">⛶ Fullscreen</button></div></div></div></section>
 <section id="quiz" class="hidden quizSection"><div class="quizWrap"><div class="quizHeader"><span id="quizThemeIcon">✏️</span><div><div class="small">Latihan setelah mempelajari materi</div><h1 id="quizTitle">Kuis Pertemuan</h1></div></div><p id="quizIntro" class="quizIntro"></p><div class="formCard"><label class="fieldLabel">Nama siswa</label><input id="meetingStudentName" placeholder="Masukkan nama"></div><form id="meetingQuizForm" onsubmit="submitMeetingQuiz(event)"><div id="meetingQuestions"></div><button class="btn" type="submit">Kirim Jawaban</button></form><div id="meetingResult" class="resultBox hidden"></div></div></section>
 <section id="studentScores" class="hidden"><div class="contents"><div class="sectionHero"><span class="badge">Perkembangan Belajar</span><h1>🏆 Skor Kuis dan Evaluasi</h1><p class="small">Lihat nilai, waktu mengerjakan, dan jumlah soal yang benar.</p></div><div id="studentScoreCards" class="studentScoreGrid"></div></div></section>
@@ -803,7 +802,19 @@ function fitPage(){resetZoom()}
 function getProgress(){return {completed:Array.isArray(onlineCache.progress)?onlineCache.progress:[false,false,false,false]}}
 function isMeetingCompleted(i){return !!getProgress().completed[i]}
 function getMyScores(){if(!currentUser)return [];return getScores().filter(x=>String(x.user_id||'')===String(currentUser.id||''))}
-function getEvaluationRecord(){return getMyScores().filter(x=>x.type==='Evaluasi Akhir').slice(-1)[0]||null}
+function isFinalEvaluationCompletedRecord(x){
+ if(!x||x.type!=='Evaluasi Akhir')return false;
+ // Catatan 0/0 yang dibuat saat evaluasi ditinggalkan tidak boleh mengunci evaluasi.
+ // Hasil yang benar-benar dikumpulkan melalui submitFinalQuiz selalu memiliki durasi > 0.
+ const duration=Number(x.duration_seconds);
+ if(Number.isFinite(duration))return duration>0;
+ // Kompatibilitas dengan hasil lama yang belum memiliki kolom durasi:
+ // nilai non-0 tetap dianggap sebagai hasil sah.
+ const pct=String(x.percent??'').replace('%','').trim();
+ const score=Number(x.score);
+ return (Number.isFinite(score)&&score>0)||(pct!==''&&Number(pct)>0);
+}
+function getEvaluationRecord(){return getMyScores().filter(isFinalEvaluationCompletedRecord).slice(-1)[0]||null}
 function hasCompletedEvaluation(){return !!getEvaluationRecord()}
 function canOpenMeeting(i){if(!currentUser||currentUser.role!=='student')return true;for(let j=0;j<i;j++){if(!isMeetingCompleted(j))return false}return true}
 function canOpenEvaluation(){if(!currentUser||currentUser.role!=='student')return true;return getProgress().completed.every(Boolean)}
@@ -824,7 +835,7 @@ function go(id,btn){
  document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));
  if(btn)btn.classList.add('active');
  closeSide();
- if(['infoDeskripsi','infoCP','infoKompetensi','infoProfil','infoTarget','infoAsesmen','contents','pustaka'].includes(id)){const m=document.getElementById('infoMenu');if(m)m.classList.add('open')}
+ if(['infoDeskripsi','infoCP','infoKompetensi','infoProfil','infoTarget','infoAsesmen','pustaka'].includes(id)){const m=document.getElementById('infoMenu');if(m)m.classList.add('open')}
  document.body.classList.toggle('flipbook-open',id==='flipbook');
  if(id==='flipbook' && btn){start=0;end=5;current=0;document.getElementById('sectionTitle').textContent=sections[0].name;resetZoom();render();}
  if(id==='evaluasi'){if(hasCompletedEvaluation()){showCompletedEvaluationView()}else{startEvaluationLock();}}
@@ -1113,6 +1124,9 @@ async function submitFinalQuiz(e){
  finalEvaluation.tf.forEach((x,i)=>{const v=document.querySelector(`input[name="ftf${i}"]:checked`);if(v&&String(x.a)===v.value){points+=evaluationWeights.tf[i];correctCount++}});
  finalEvaluation.match.forEach((m,mi)=>{let pairCorrect=0;m.left.forEach((_,li)=>{const v=document.querySelector(`select[name="fmatch${mi}_${li}"]`);if(v&&+v.value===m.a[li])pairCorrect++});points+=pairCorrect*5;if(pairCorrect===m.left.length)correctCount++});
  const total=100;
+ // RPC Supabase menyimpan nilai sebagai integer. Pembobotan PGK dapat menghasilkan desimal
+ // seperti 18.333333..., sehingga nilai akhir dibulatkan sebelum disimpan agar sesuai tipe data.
+ points=Math.round(points);
  const percent=points;
  const name=currentUser?.name||'';
  if(!name){alert('Nama akun siswa tidak tersedia. Silakan login kembali.');return}
@@ -1153,7 +1167,7 @@ function rememberScoreMeta(record,data){try{const meta=JSON.parse(localStorage.g
 async function saveScore(record){
  if(!currentUser||!sb)return false;
  if(currentUser.role==='student'){
-  const args={p_student_id:currentUser.id,p_type:record.type,p_meeting:record.meeting||'-',p_score:record.score,p_total:record.total,p_percent:record.percent,p_correct_count:Number.isFinite(Number(record.correctCount))?Number(record.correctCount):0,p_duration_seconds:Number.isFinite(Number(record.durationSeconds))?Number(record.durationSeconds):0};
+  const args={p_student_id:currentUser.id,p_type:record.type,p_meeting:record.meeting||'-',p_score:Math.round(Number(record.score)||0),p_total:Math.round(Number(record.total)||0),p_percent:record.percent,p_correct_count:Number.isFinite(Number(record.correctCount))?Number(record.correctCount):0,p_duration_seconds:Number.isFinite(Number(record.durationSeconds))?Number(record.durationSeconds):0};
   let data=null,error=null;
   const v2=await sb.rpc('student_save_score_v3',args);
   data=v2.data;error=v2.error;
@@ -1161,7 +1175,7 @@ async function saveScore(record){
    if(/sudah pernah dikerjakan/i.test(String(error.message||''))){alert('Evaluasi Akhir sudah pernah dikerjakan dan tidak dapat diulang.');return false}
    console.error(error);alert('Nilai belum berhasil disimpan online.\n\nDetail: '+((error&&(error.message||error.code))||'tidak diketahui'));return false
   }
-  if(error){const fallback=await sb.rpc('student_save_score',{p_student_id:currentUser.id,p_type:record.type,p_meeting:record.meeting||'-',p_score:record.score,p_total:record.total,p_percent:record.percent});data=fallback.data;error=fallback.error}
+  if(error){const fallback=await sb.rpc('student_save_score',{p_student_id:currentUser.id,p_type:record.type,p_meeting:record.meeting||'-',p_score:Math.round(Number(record.score)||0),p_total:Math.round(Number(record.total)||0),p_percent:record.percent});data=fallback.data;error=fallback.error}
   if(error){console.error(error);alert('Nilai belum berhasil disimpan online.\n\nDetail: '+((error&&(error.message||error.code))||'tidak diketahui'));return false}
   if(data){onlineCache.scores=[...(onlineCache.scores||[]),data];rememberScoreMeta(record,data)}
   return true
